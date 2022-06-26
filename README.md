@@ -1,3 +1,5 @@
+## LCP Debugger (25% core web vitals weightage metric)
+
 This is a chrome extension to debug LCP issues in a webpage. LCP also known as Longest Containtful Paint is one of the important metric to optimise in order to get a fast webpage performance. Google recommends it is better to have LCP less that 2.5seconds. 
 
 LCP being one of the harder metric to optimise because of these reasons:

@@ -1,0 +1,21 @@
+{
+    "name": "LCPDebugger",
+    "description": "LCPDebugger is an extension to debug LCP in webpage.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [],
+    "host_permissions": [],
+    "content_scripts": [
+        {
+            "js": ["content.js"],
+            "css": ["css/content-script.css"],
+            "matches": ["https://*/*"]
+        }
+    ],
+    "action": {
+        "default_title": "LCPDebugger",
+        "default_icon": "assets/logo.png",
+        "default_popup": "popup.html"
+    },
+    "key": "iUiiRf2gGoOtmYqOv5FHoLoxFisn2VaB"
+}

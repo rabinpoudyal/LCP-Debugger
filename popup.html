@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.1.0/build/pure-min.css"
+      integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container" id="container">
+        <h1 class="heading">LCP Debugger</h1>
+        <div id="main-content">
+          <div id="lcp-element"></div>
+          <table class="pure-table pure-table-striped">
+            <thead>
+              <th>Title</th>
+              <th>Time Spent</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Time to first byte</td>
+                <td id="ttfb"></td>
+              </tr>
+              <tr>
+                <td>Resource load delay</td>
+                <td id="rld"></td>
+              </tr>
+              <tr>
+                <td>Resource load time</td>
+                <td id="rlt"></td>
+              </tr>
+              <tr>
+                <td>Element render delay</td>
+                <td id="erd"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td><strong>Total: </strong></td>
+                <td id="lcp-total"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="popup.js"></script>
+</html>

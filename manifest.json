@@ -1,6 +1,6 @@
 {
-    "name": "LCPDebugger",
-    "description": "LCPDebugger is an extension to debug LCP in webpage.",
+    "name": "LCP Debugger",
+    "description": "LCPDebugger is an extension to debug LCP in webpage. It gives a breakdown of where time is most spent while rendering LCP element and helps you to find the bottleneck.",
     "version": "1.0",
     "manifest_version": 3,
     "permissions": [],

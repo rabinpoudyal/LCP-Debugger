@@ -70,32 +70,6 @@ new PerformanceObserver((list) => {
       end: lcpRenderTime,
     }),
   ];
-
-  lcpElement = lcpEntry.element;
-  let lcpVal = lcpRenderTime / 1000;
-
-  let lcpElm = document.createElement("div");
-  lcpElm.innerHTML = `<div id="lcpinfo-page"> 
-    <span class="lcp-data">TTFB: ${humanReadableTime(
-      lcpSubPartMeasures[0].duration,
-      "ms"
-    )}</span>
-    <span class="lcp-data">RLD: ${humanReadableTime(
-      lcpSubPartMeasures[1].duration,
-      "ms"
-    )}</span>
-    <span class="lcp-data">RLT: ${humanReadableTime(
-      lcpSubPartMeasures[2].duration,
-      "ms"
-    )}</span>
-    <span class="lcp-data">ERD: ${humanReadableTime(
-      lcpSubPartMeasures[3].duration,
-      "ms"
-    )}</span>
-    <span class="lcp-data">LCP: ${humanReadableTime(lcpVal, "s")}</span>
-    </div>`;
-
-  document.getElementsByTagName("body")[0].prepend(lcpElm);
 }).observe({ type: "largest-contentful-paint", buffered: true });
 
 chrome.runtime.onMessage.addListener((msg, sender, response) => {
